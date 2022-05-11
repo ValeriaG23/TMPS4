@@ -1,0 +1,18 @@
+package SingleResp;
+
+import SingleResp.Marfa;
+
+import java.util.Random;
+
+public class Calculator {
+    private Marfa marfa;
+    public Calculator(Marfa marfa){
+        this.marfa=marfa;
+    }
+    public void calculamSumaComenzii(){
+        Random rnd =   new Random();
+        int resultCalculator = rnd.nextInt(300) * this.marfa.getCantitate();
+        this.marfa.setResultCalculator(resultCalculator);
+        System.out.println("Comanda cu id-ul: "+this.marfa.getId_Marfa() + "in suma de "+this.marfa.getResultCalculator());
+    }
+}
