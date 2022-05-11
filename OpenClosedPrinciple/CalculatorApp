@@ -1,0 +1,11 @@
+package OpenClosedPricip;
+
+public class CalculatorApplication {
+    public double mp(Person[] persons){
+        double masaperfectafem = 0;
+        for(Person pers : persons){
+            masaperfectafem +=(pers.inaltime-110) * 1.15;
+        }
+        return masaperfectafem;
+    }
+}
