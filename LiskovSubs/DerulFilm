@@ -1,0 +1,4 @@
+package LiskovSubstit;
+
+public class DerulareFilm extends Kinogo{
+}
