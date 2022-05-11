@@ -1,0 +1,7 @@
+package DependencyInversion;
+
+public interface Produse {
+    public void probeaza();
+    public void addcos();
+
+}
