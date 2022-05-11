@@ -1,0 +1,55 @@
+package SingleResp;
+
+import java.util.Random;
+
+public class Marfa {
+    private Cumparator cumparator;
+    private String id_Marfa;
+    private String nume_produs;
+    private int cantitate;
+    private int resultCalculator;
+
+    public Cumparator getCumparator() {
+        return cumparator;
+    }
+
+    public void setCumparator(Cumparator cumparator) {
+        this.cumparator = cumparator;
+    }
+
+    public String getId_Marfa() {
+        return id_Marfa;
+    }
+
+    public void setId_Marfa(String id_Marfa) {
+       Random random = new Random();
+        this.id_Marfa = id_Marfa + "-" +  random.nextInt(500);
+    }
+    public String getNume_produs(){
+        return nume_produs;
+    }
+
+    public void setNume_produs(String nume_produs) {
+        this.nume_produs = nume_produs;
+        setId_Marfa(nume_produs);
+    }
+
+    public int getCantitate() {
+        return cantitate;
+    }
+
+    public void setCantitate(int cantitate) {
+        this.cantitate = cantitate;
+    }
+
+    public int getResultCalculator() {
+        return resultCalculator;
+    }
+
+    public void setResultCalculator(int resultCalculator) {
+        this.resultCalculator = resultCalculator;
+    }
+    public void facemComanda(){
+        System.out.println("Preparam marfa pentru cumparator "+this.getCumparator().getNume() + "cu id produs" + this.getNume_produs());
+    }
+}
