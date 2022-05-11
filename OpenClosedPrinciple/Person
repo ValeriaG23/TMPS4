@@ -1,0 +1,5 @@
+package OpenClosedPricip;
+
+public class Person {
+    public double inaltime;
+}
