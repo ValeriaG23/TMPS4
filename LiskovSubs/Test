@@ -1,0 +1,17 @@
+package LiskovSubstit;
+import java.util.ArrayList;
+import java.util.List;
+public class Test {
+    public static void main(String[] args){
+        List<Kinogo> kinogo = new ArrayList<Kinogo>();
+        kinogo.add(new VizionTrailer());
+        kinogo.add(new DerulareFilm());
+        derultottul(kinogo);
+    }
+    public static void derultottul(List<Kinogo> derulare){
+    for(Kinogo kinogo: derulare){
+        kinogo.vizioneaza();
+        kinogo.vizioneazatrailer();
+    }
+    }
+}
