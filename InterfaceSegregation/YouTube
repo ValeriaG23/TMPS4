@@ -1,0 +1,13 @@
+package InterfaceSegregation;
+
+public class YT implements Film, Tutorial{
+    @Override
+    public void rularefilm() {
+        System.out.println(" Dam start filmului");
+    }
+
+    @Override
+    public void rulareVideo() {
+        System.out.println("Urmareste tutorialul");
+    }
+}
