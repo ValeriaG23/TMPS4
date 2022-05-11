@@ -1,0 +1,7 @@
+package LiskovSubstit;
+
+public class Filme {
+    public void vizioneaza(){
+        System.out.println("Vizioneaza filmul");
+    }
+}
