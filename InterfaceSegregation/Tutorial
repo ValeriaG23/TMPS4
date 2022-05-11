@@ -1,0 +1,5 @@
+package InterfaceSegregation;
+
+public interface Tutorial {
+    public void rulareVideo();
+}
