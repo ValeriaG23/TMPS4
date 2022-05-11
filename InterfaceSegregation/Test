@@ -1,0 +1,19 @@
+package InterfaceSegregation;
+
+public class Test {
+    public static void main(String[] args) {
+        YT youtube = new YT();
+        System.out.println("Alege optiunea ce o doresti sa o realizezi pe YT ");
+        youtube.rularefilm();
+        youtube.rulareVideo();
+        System.out.println(" ");
+
+        Baeldung bal = new Baeldung();
+        System.out.println("Pe Baeldung poti: ");
+        System.out.println(" ");
+
+        Kinogo kinog = new Kinogo();
+        System.out.println("Pe Kinogo poti: ");
+        kinog.rularefilm();
+    }
+}
