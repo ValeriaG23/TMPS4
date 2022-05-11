@@ -1,0 +1,28 @@
+package DependencyInversion;
+
+public class TestDep {
+    public static void main(String[] args) {
+
+
+
+        Produse bluza = new Bluza();
+        System.out.println("Ce faci cu bluza?");
+        bluza.probeaza();
+        bluza.addcos();
+
+        Produse blugi = new Blugi();
+        System.out.println("Ce faci cu blugii?");
+        blugi.probeaza();
+        blugi.addcos();
+
+        Tricou tricou = new Tricou();
+        System.out.println("Ce faci cu tricoul?");
+        tricou.probeaza();
+        tricou.addcos();
+
+        Cos cos = new Cos();
+        System.out.println("Ce actiuni realizezi asupra cosului");
+        cos.addproduse(blugi);
+        cos.achita(blugi);
+    }
+}
