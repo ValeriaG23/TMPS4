@@ -1,0 +1,15 @@
+package SingleResp;
+
+import SingleResp.Marfa;
+
+public class Livrare {
+    private Marfa marfa;
+    public Livrare(Marfa marfa){
+        this.marfa=marfa;
+    }
+    public void livrare(){
+        System.out.println("Livrarea produselor");
+        System.out.println("Id produsului este: " + this.marfa.getId_Marfa()+"livrat catre" + this.marfa.getCumparator().getNume());
+        System.out.println("Produse livrate la adresa: "+ this.marfa.getCumparator().getAdresa());
+    }
+}
