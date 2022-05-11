@@ -1,0 +1,16 @@
+package OpenClosedPricip;
+
+public class Verificare {
+    public static void main(String args[]){
+        Person person1 = new Person();
+        person1.inaltime = 178;
+
+        Person[] calculator = new Person[1];
+        calculator[0] = person1;
+
+        CalculatorApplication calculatorApplication = new CalculatorApplication();
+        double mc = calculatorApplication.mp(calculator);
+        System.out.println("Masa corporala perfecta constituie: " +mc);
+
+    }
+}
