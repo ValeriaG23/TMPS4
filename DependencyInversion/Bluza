@@ -1,0 +1,13 @@
+package DependencyInversion;
+
+public class Bluza implements Produse{
+    @Override
+    public void probeaza() {
+        System.out.println(" Probeaza bluza ");
+    }
+
+    @Override
+    public void addcos() {
+        System.out.println(" Adauga la cos");
+    }
+}
