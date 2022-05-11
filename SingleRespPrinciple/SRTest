@@ -1,0 +1,22 @@
+package SingleResp;
+
+import java.io.*;
+import java.util.*;
+public class SingleResponsibilityTEST {
+    public static void main(String[] args){
+        Cumparator cumparator1 = new Cumparator();
+        cumparator1.setNume("Ioana");
+        cumparator1.setAdresa("str.Studentilor 7/1");
+        Marfa marfa1 = new Marfa();
+        marfa1.setNume_produs(" Sushi set.Philadelphia");
+        marfa1.setCantitate(2);
+        marfa1.setCumparator(cumparator1);
+
+        marfa1.facemComanda();
+        Calculator calculator = new Calculator(marfa1);
+        calculator.calculamSumaComenzii();
+
+        Livrare livrare = new Livrare(marfa1);
+        livrare.livrare();
+    }
+}
